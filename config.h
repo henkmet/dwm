@@ -37,7 +37,7 @@ static const Bool focusonwheelscroll = False;
 /* tagging */
 //static const char *tags[] = { "\ue1ec", "\ue26d", "3", "\ue072", "5", "6", "7", "\ue05c", "9" };
 static const char *tags[] = {"1","2","3","4","5","6","7","8","9"};
-static const char *occtag[] = {"\ue1ec"};
+static const char *occtag[] = {"\ue1ec","bah"};
 
 static const Rule rules[] = {
 	/* xprop(1):

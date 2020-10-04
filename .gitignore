@@ -3,3 +3,4 @@ tags
 *.rej
 *.orig
 dwm
+config.mk
