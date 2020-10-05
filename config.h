@@ -9,9 +9,8 @@ static const char *fonts[] = {
         "tamzen:size=12",
     "Fire:size=10"
 };
-//static const char font[]            = "EB Garamond:size=10" ;
 static const char dmenufont[]       = "EB Garamond:size=12";
-static const unsigned int gappx = 6;
+static const unsigned int gappx     = 6;
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -22,13 +21,13 @@ static const char normbgcolor[]     = "#01010b";
 static const char normfgcolor[]     = "#c04400";
 static const char selbgcolor[]      = "#2a0001";
 static const char selfgcolor[]      = "#fcffb6";
-static const char selbordercolor[]      = "#000088";
+static const char selbordercolor[]  = "#000088";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = {normfgcolor,normbgcolor,normbordercolor  },
 	[SchemeSel]  = {selfgcolor,selbgcolor,selbordercolor},
-    [SchemeWarn] = {"#161813", normfgcolor, "#ff0000"},
-    [SchemeUrgent] = {"#fdffac", selbgcolor, "#ff0000"},
+	[SchemeWarn] = {"#161813", normfgcolor, "#ff0000"},
+ 	[SchemeUrgent] = {"#fdffac", selbgcolor, "#ff0000"},
 };
 
 /* False means using the scroll wheel on a window will not change focus */
@@ -45,18 +44,18 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-    {"Luakit",    NULL,   NULL,         1<<1,   0,       -1},
-	{"Opera",     NULL,	  NULL,	      1<<2,	    0,		 -1 },
-	{"st-256color",NULL,	  NULL,	      1,	    0,		 -1 },
-    {"Claws-mail",NULL,       NULL,       1<<3,         0,           -1 },
-    {"Spotify",   NULL,       NULL,       1<<7,         0,     -1 },
-    {"TelegramDesktop", NULL, NULL,       1<<6,         0,      -1},
-    {"mpv",     NULL,   NULL,   1<<8,   0,  -1},
-    {"firefox", NULL,   NULL,   1<<5,   0,  -1},
+    {"Luakit",        NULL,       NULL,       1<<1,         0,           -1 },
+    {"Opera",         NULL,	  NULL,	      1<<2,	    0,		 -1 },
+    {"st-256color",   NULL,	  NULL,	      1,	    0,		 -1 },
+    {"Claws-mail",    NULL,       NULL,       1<<3,         0,           -1 },
+    {"Spotify",       NULL,       NULL,       1<<7,         0,           -1 },
+    {"TelegramDesktop",NULL,      NULL,       1<<6,         0,           -1 },
+    {"mpv",           NULL,       NULL,       1<<8,         0,           -1 },
+    {"firefox",        NULL,       NULL,       1<<5,         0,           -1 },
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact      = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
@@ -91,14 +90,13 @@ static const char *windowshot[] = { "windowshot", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-    { MODKEY,                       XK_s,      spawn,          {.v = spotifyplaypause } },
-    { MODKEY,                       XK_n,      spawn,          {.v = spotifynext } },
-    { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = spotifyprevious } },
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-    { MODKEY,                       XK_c,      spawn,          {.v = concertcmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-    { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = mpctoggle } },
-    { MODKEY,                       XK_w,      spawn,          {.v = windowshot } },
+        { MODKEY,                       XK_s,      spawn,          {.v = spotifyplaypause } },
+        { MODKEY,                       XK_n,      spawn,          {.v = spotifynext } },
+        { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = spotifyprevious } },
+        { MODKEY,                       XK_c,      spawn,          {.v = concertcmd } },
+        { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+        { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = mpctoggle } },
+        { MODKEY,                       XK_w,      spawn,          {.v = windowshot } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
