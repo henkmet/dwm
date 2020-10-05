@@ -7,7 +7,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[] = {
         "tamzen:size=12",
-    "fire:size=10"
+    "Fire:size=10"
 };
 //static const char font[]            = "EB Garamond:size=10" ;
 static const char dmenufont[]       = "EB Garamond:size=12";
