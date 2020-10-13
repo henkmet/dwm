@@ -9,7 +9,6 @@ static const char *fonts[] = {
         "tamzen:size=12",
     "fire:size=10"
 };
-//static const char font[]            = "EB Garamond:size=10" ;
 static const char dmenufont[]       = "EB Garamond:size=12";
 static const unsigned int gappx = 6;
 static const char col_gray1[]       = "#222222";
@@ -37,7 +36,7 @@ static const Bool focusonwheelscroll = False;
 /* tagging */
 //static const char *tags[] = { "\ue1ec", "\ue26d", "3", "\ue072", "5", "6", "7", "\ue05c", "9" };
 static const char *tags[] = {"1","2","3","4","5","6","7","8","9"};
-static const char *occtag[] = {"\ue1ec","bah"};
+static const char *occtag[] = {"\ue1ec"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -83,7 +82,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *concertcmd[] = { "concertcmd", NULL };
-static const char *mpctoggle[] = { "mpc", "toggle", NULL };
+static const char *mpctoggle[] = { "mpctoggle", NULL };
 static const char *spotifyplaypause[] = { "playerctl", "play-pause", NULL};
 static const char *spotifynext[] = { "playerctl", "next", NULL};
 static const char *spotifyprevious[] = { "playerctl", "previous", NULL};
