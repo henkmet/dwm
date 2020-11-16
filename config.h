@@ -87,6 +87,7 @@ static const char *spotifyplaypause[] = { "playerctl", "play-pause", NULL};
 static const char *spotifynext[] = { "playerctl", "next", NULL};
 static const char *spotifyprevious[] = { "playerctl", "previous", NULL};
 static const char *windowshot[] = { "windowshot", NULL};
+static const char *screenshot[] = { "screenshot", NULL};
 
 static Key keys[] = {
     /* modifier                     key        function        argument */
@@ -97,6 +98,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
     { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = mpctoggle } },
     { MODKEY,                       XK_w,      spawn,          {.v = windowshot } },
+    { MODKEY|ShiftMask,             XK_w,      spawn,          {.v = screenshot } },
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
     { MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
