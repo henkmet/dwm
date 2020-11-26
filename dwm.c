@@ -1711,6 +1711,8 @@ tile(Monitor *m)
 			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
             if (my + HEIGHT(c) < m->wh)
                     my += HEIGHT(c);
+            if (n==1 && c->isfloatsingle==1)
+                    resize(c, (m->mw - m->mw * 0.5) / 2, (m->mh - m->mh * 0.5) / 2, m->mw*0.5, m->mh*0.5, 0);
 		} else {
 			h = (m->wh - ty) / (n - i);
 			resize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), 0);
