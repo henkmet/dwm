@@ -89,9 +89,11 @@ static const char *spotifynext[] = { "playerctl", "next", NULL};
 static const char *spotifyprevious[] = { "playerctl", "previous", NULL};
 static const char *windowshot[] = { "windowshot", NULL};
 static const char *screenshot[] = { "screenshot", NULL};
+static const char *opener[] = { "plumber", NULL};
 
 static Key keys[] = {
     /* modifier                     key        function        argument */
+    { MODKEY,                       XK_o,      spawn,          {.v = opener } },
     { MODKEY,                       XK_s,      spawn,          {.v = spotifyplaypause } },
     { MODKEY,                       XK_n,      spawn,          {.v = spotifynext } },
     { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = spotifyprevious } },
