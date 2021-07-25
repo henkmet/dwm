@@ -45,14 +45,14 @@ static const Rule rules[] = {
      */
     /* class      instance    title       tags mask     isfloating    isfloatsingle   monitor */
     {"Luakit",        NULL,       NULL,       1<<1,         0,           0,            -1 },
-    {"MuPDF",         NULL,       NULL,       1<<3,         0,           0,            -1 },
-    {"Opera",         NULL,       NULL,       1<<2,         0,           0,            -1 },
+    {"Ope",         NULL,       NULL,       1<<2,         0,           0,            -1 },
     {"st-256color",   NULL,       NULL,       1,            0,           1,            -1 },
     {"Claws-mail",    NULL,       NULL,       1<<4,         0,           0,            -1 },
     {"Spotify",       NULL,       NULL,       1<<7,         0,           0,            -1 },
     {"TelegramDesktop",NULL,      NULL,       1<<6,         0,           0,            -1 },
     {"mpv",           NULL,       NULL,       1<<8,         0,           0,            -1 },
     {"firefox",       NULL,       NULL,       1<<5,         0,           0,            -1 },
+    {NULL,            NULL,       "pdf",      1<<3,         0,           0,            -1 },
 };
 
 /* layout(s) */
