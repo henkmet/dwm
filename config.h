@@ -84,9 +84,9 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *concertcmd[] = { "concertcmd", NULL };
 static const char *mpctoggle[] = { "mpdcontrol", NULL };
-static const char *spotifyplaypause[] = { "playerctl", "play-pause", NULL};
-static const char *spotifynext[] = { "playerctl", "next", NULL};
-static const char *spotifyprevious[] = { "playerctl", "previous", NULL};
+static const char *spotifyplaypause[] = { "playerctl", "--player=spotify", "play-pause", NULL};
+static const char *spotifynext[] = { "playerctl", "--player=spotify", "next", NULL};
+static const char *spotifyprevious[] = { "playerctl", "--player=spotify", "previous", NULL};
 static const char *windowshot[] = { "windowshot", NULL};
 static const char *screenshot[] = { "screenshot", NULL};
 static const char *opener[] = { "plumber", NULL};
