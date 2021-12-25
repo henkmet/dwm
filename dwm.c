@@ -710,6 +710,8 @@ drawbar(Monitor *m)
     char ctmp;
     const char *tagtext;
 	Client *c;
+if (!m->showbar)
+        return;
 
 	/* draw status first so it can be overdrawn by tags later */
 	if (m == selmon) { /* status is only drawn on selected monitor */
