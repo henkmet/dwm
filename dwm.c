@@ -709,9 +709,9 @@ drawbar(Monitor *m)
     int tx = 0;
     char ctmp;
     const char *tagtext;
-	Client *c;
-if (!m->showbar)
-        return;
+    Client *c;
+    if (!m->showbar)
+            return;
 
 	/* draw status first so it can be overdrawn by tags later */
 	if (m == selmon) { /* status is only drawn on selected monitor */
