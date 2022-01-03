@@ -6,7 +6,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[] = {
-        "tamzen:size=12",
+    "Terminus:size=12",
     "newfire:size=12"
 };
 static const char dmenufont[]       = "EB Garamond:size=12";
@@ -63,9 +63,9 @@ static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
     /* symbol     arrange function */
-    { "[]=",      tile },    /* first entry is default */
-    { "><>",      NULL },    /* no layout function means floating behavior */
-    { "[M]",      monocle },
+    { "\ue1ed",      tile },    /* first entry is default */
+    { "\ue1ee",      NULL },    /* no layout function means floating behavior */
+    { "\ue1ef",      monocle },
 };
 
 /* key definitions */
