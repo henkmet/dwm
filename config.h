@@ -26,8 +26,8 @@ static const char *colors[][3]      = {
     /*               fg         bg         border   */
     [SchemeNorm] = {normfgcolor,normbgcolor,normbordercolor  },
     [SchemeSel]  = {selfgcolor,selbgcolor,selbordercolor},
-    [SchemeWarn] = {"#161813", normfgcolor, "#ff0000"},
-    [SchemeUrgent] = {"#fdffac", selbgcolor, "#ff0000"},
+    [SchemeWarn] = {normbgcolor, normfgcolor, "#ff0000"},
+    [SchemeUrgent] = {normbgcolor, selbgcolor, "#ff0000"},
 };
 
 /* False means using the scroll wheel on a window will not change focus */
