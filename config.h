@@ -18,9 +18,9 @@ static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char normbordercolor[] = "#000033";
 static const char normbgcolor[]     = "#000d3d";
-static const char normfgcolor[]     = "#3e4e9d";
-static const char selbgcolor[]      = "#012870";
-static const char selfgcolor[]      = "#daf9f6";
+static const char normfgcolor[]     = "#4b59aa";
+static const char selfgcolor[]      = "#012870";
+static const char selbgcolor[]      = "#daf9f6";
 static const char selbordercolor[]  = "#000088";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
