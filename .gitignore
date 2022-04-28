@@ -2,6 +2,7 @@ tags
 *.o
 *.rej
 *.orig
+*.diff
 dwm
 config.mk
 config.def.h
