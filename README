@@ -4,7 +4,7 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 
 This version of dwm
 -------------------
-This version has focusonclick, uselessgaps, tab, pertag and statuscolors applied and customisations in source and config.h, with thanks to other patches for ideas.
+This version has focusonclick, uselessgaps, tab, pertag, unicode-ellipsis and statuscolors applied and customisations in source and config.h, with thanks to other patches for ideas.
 
 
 Requirements
