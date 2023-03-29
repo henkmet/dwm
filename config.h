@@ -91,7 +91,7 @@ static const char *spotifyprevious[] = { "playerctl", "--player=spotify", "previ
 static const char *windowshot[] = { "windowshot", NULL};
 static const char *screenshot[] = { "screenshot", NULL};
 static const char *opener[] = { "plumber", NULL};
-static const char *weatherprediction[] = { "weather.sh, NULL};
+static const char *weatherprediction[] = { "weather.sh", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
