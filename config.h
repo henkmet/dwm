@@ -91,6 +91,7 @@ static const char *spotifyprevious[] = { "playerctl", "--player=spotify", "previ
 static const char *windowshot[] = { "windowshot", NULL};
 static const char *screenshot[] = { "screenshot", NULL};
 static const char *opener[] = { "plumber", NULL};
+static const char *weatherprediction[] = { "weather.sh, NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
@@ -104,6 +105,7 @@ static const Key keys[] = {
     { MODKEY,                       XK_w,      spawn,          {.v = windowshot } },
     { MODKEY|ShiftMask,             XK_w,      spawn,          {.v = screenshot } },
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+    { MODKEY,                       XK_r,      spawn,          {.v = weatherprediction } },
     { MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_q,      tabmode,        {-1} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
