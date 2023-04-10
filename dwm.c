@@ -825,14 +825,6 @@ drawbar(Monitor *m)
 }
 
 void
-drawtabs(void) {
-	Monitor *m;
-
-	for(m = mons; m; m = m->next)
-		drawtab(m);
-}
-
-void
 drawtab(Monitor *m) {
 	Client *c;
 	int i;
@@ -872,6 +864,14 @@ drawtab(Monitor *m) {
 
 	drw_setscheme(drw, scheme[SchemeNorm]);
 	drw_map(drw, m->tabwin, 0, 0, m->mw, th);
+}
+
+void
+drawtabs(void) {
+	Monitor *m;
+
+	for(m = mons; m; m = m->next)
+		drawtab(m);
 }
 
 void
