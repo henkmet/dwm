@@ -88,6 +88,7 @@ static const char *mpctoggle[] = { "mpdcontrol", NULL };
 static const char *spotifyplaypause[] = { "playerctl", "--player=spotify", "play-pause", NULL};
 static const char *spotifynext[] = { "playerctl", "--player=spotify", "next", NULL};
 static const char *spotifyprevious[] = { "playerctl", "--player=spotify", "previous", NULL};
+static const char *mpvplaypause[] = { "playerctl", "--player=mpv", "play-pause", NULL};
 static const char *windowshot[] = { "windowshot", NULL};
 static const char *screenshot[] = { "screenshot", NULL};
 static const char *opener[] = { "plumber", NULL};
@@ -102,6 +103,7 @@ static const Key keys[] = {
     { MODKEY,                       XK_s,      spawn,          {.v = spotifyplaypause } },
     { MODKEY,                       XK_n,      spawn,          {.v = spotifynext } },
     { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = spotifyprevious } },
+		{ MODKEY,                       XK_y,      spawn,          {.v = mpvplaypause } },
     { MODKEY,                       XK_c,      spawn,          {.v = concertcmd } },
     { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
     { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = mpctoggle } },
@@ -112,7 +114,7 @@ static const Key keys[] = {
     { MODKEY,                       XK_a,      spawn,          {.v = dunston } },
     { MODKEY|ShiftMask,             XK_a,      spawn,          {.v = dunstoff } },
     { MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_q,      tabmode,        {-1} },
+    { MODKEY,                       XK_q,      tabmode,        {-1} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
     { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
     { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
@@ -160,6 +162,6 @@ static const Button buttons[] = {
     { ClkTagBar,            0,              Button3,        toggleview,     {0} },
     { ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
     { ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
-	{ ClkTabBar,            0,              Button1,        focuswin,       {0} },
+    { ClkTabBar,            0,              Button1,        focuswin,       {0} },
 };
 
