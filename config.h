@@ -54,6 +54,7 @@ static const Rule rules[] = {
     {"mpv",           NULL,       NULL,       1<<8,         0,           0,            -1 },
     {"firefox",       NULL,       NULL,       1<<5,         0,           0,            -1 },
     {NULL,            NULL,       "pdf",      1<<3,         0,           0,            -1 },
+		{"discord",       NULL,       NULL,       1<<4,         0,           0,            -1 },
 };
 
 /* layout(s) */
