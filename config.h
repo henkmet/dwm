@@ -96,6 +96,7 @@ static const char *opener[] = { "plumber", NULL};
 static const char *weatherprediction[] = { "weather.sh", NULL};
 static const char *dunston[] = { "dunstctl", "set-paused", "false", NULL};
 static const char *dunstoff[] = { "dunstctl", "set-paused", "true", NULL};
+static const char *stoprecord[] = { "killall", "ffmpeg", NULL};
 
 
 static const Key keys[] = {
@@ -114,6 +115,7 @@ static const Key keys[] = {
     { MODKEY,                       XK_r,      spawn,          {.v = weatherprediction } },
     { MODKEY,                       XK_a,      spawn,          {.v = dunston } },
     { MODKEY|ShiftMask,             XK_a,      spawn,          {.v = dunstoff } },
+		{ MODKEY|ShiftMask,             XK_k,      spawn,          {.v = stoprecord } },
     { MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY,                       XK_q,      tabmode,        {-1} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
