@@ -54,7 +54,7 @@ static const Rule rules[] = {
     {"mpv",           NULL,       NULL,       1<<8,         0,           0,            -1 },
     {"firefox",       NULL,       NULL,       1<<5,         0,           0,            -1 },
     {NULL,            NULL,       "pdf",      1<<3,         0,           0,            -1 },
-		{"discord",       NULL,       NULL,       1<<4,         0,           0,            -1 },
+    {"discord",       NULL,       NULL,       1<<4,         0,           0,            -1 },
 };
 
 /* layout(s) */
@@ -105,7 +105,7 @@ static const Key keys[] = {
     { MODKEY,                       XK_s,      spawn,          {.v = spotifyplaypause } },
     { MODKEY,                       XK_n,      spawn,          {.v = spotifynext } },
     { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = spotifyprevious } },
-		{ MODKEY,                       XK_y,      spawn,          {.v = mpvplaypause } },
+    { MODKEY,                       XK_y,      spawn,          {.v = mpvplaypause } },
     { MODKEY,                       XK_c,      spawn,          {.v = concertcmd } },
     { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
     { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = mpctoggle } },
@@ -115,7 +115,7 @@ static const Key keys[] = {
     { MODKEY,                       XK_r,      spawn,          {.v = weatherprediction } },
     { MODKEY,                       XK_a,      spawn,          {.v = dunston } },
     { MODKEY|ShiftMask,             XK_a,      spawn,          {.v = dunstoff } },
-		{ MODKEY|ShiftMask,             XK_k,      spawn,          {.v = stoprecord } },
+    { MODKEY|ShiftMask,             XK_k,      spawn,          {.v = stoprecord } },
     { MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY,                       XK_q,      tabmode,        {-1} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
