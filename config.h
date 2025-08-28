@@ -98,12 +98,14 @@ static const char *weatherprediction[] = { "weather.sh", NULL};
 static const char *dunston[] = { "dunstctl", "set-paused", "false", NULL};
 static const char *dunstoff[] = { "dunstctl", "set-paused", "true", NULL};
 static const char *stoprecord[] = { "killall", "ffmpeg", NULL};
+static const char *screensaver[] = { "slock", NULL};
 
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_o,      spawn,          {.v = opener } },
     { MODKEY,                       XK_s,      spawn,          {.v = spotifyplaypause } },
+    { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = screensaver } },
     { MODKEY,                       XK_n,      spawn,          {.v = spotifynext } },
     { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = spotifyprevious } },
     { MODKEY,                       XK_y,      spawn,          {.v = mpvplaypause } },
