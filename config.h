@@ -87,6 +87,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", normbgco
 static const char *termcmd[]  = { "st", NULL };
 static const char *concertcmd[] = { "concertcmd", NULL };
 static const char *mpctoggle[] = { "mpdcontrol", NULL };
+static const char *volumeup[] = { "amixer", "sset", "Master", "5%+", NULL};
+static const char *volumedown[] = { "amixer", "sset", "Master", "5%-", NULL};
 static const char *spotifyplaypause[] = { "playerctl", "--player=spotify", "play-pause", NULL};
 static const char *spotifynext[] = { "playerctl", "--player=spotify", "next", NULL};
 static const char *spotifyprevious[] = { "playerctl", "--player=spotify", "previous", NULL};
@@ -112,6 +114,8 @@ static const Key keys[] = {
     { MODKEY,                       XK_c,      spawn,          {.v = concertcmd } },
     { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
     { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = mpctoggle } },
+		{ MODKEY,                       XK_v,      spawn,          {.v = volumedown } },
+		{ MODKEY|ShiftMask,             XK_v,      spawn,          {.v = volumeup } },
     { MODKEY,                       XK_w,      spawn,          {.v = windowshot } },
     { MODKEY|ShiftMask,             XK_w,      spawn,          {.v = screenshot } },
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
